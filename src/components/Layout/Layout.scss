@@ -1,0 +1,47 @@
+/* Header div container header content */
+.header-container {
+	/* Lock size of container */
+	height: 5vh;
+	background-color: white;
+	border: 2px solid #d1d1d1;
+	margin-bottom: 1vh;
+}
+
+.two-panel-app-container {
+	background-color: white;
+	max-width: 100vw !important;
+	min-height: 94vh;
+	max-height: 94vh;
+}
+@media only screen and (max-width: 720px) {
+
+	.full-app-container {
+		background-color: white;
+		max-width: 100vw !important;
+		min-height: 94vh;
+		max-height: 	94vh;
+		overflow-y: scroll ;
+		
+	}
+
+
+}
+@media only screen and (min-width: 720px) {
+
+.full-app-container {
+	background-color: white;
+	max-width: 100vw !important;
+	min-height: 94vh;
+	max-height: 	94vh;
+	overflow-y: scroll ;
+	
+}
+}
+
+.arrow-icon:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.nav-children {
+	margin-top: 3vh;
+}

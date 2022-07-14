@@ -1,0 +1,99 @@
+
+
+
+@media only screen and (max-width: 720px) {
+    .app-container {
+       display: flex;
+       flex-direction: column;
+      
+       border-bottom: 2px solid rgb(190, 190, 190);
+
+
+   } 
+   .nav {
+       order: 2;
+       min-height: 57vh;
+       min-width: 25vw;
+       max-width: 100%;
+       border-bottom: 2px solid rgb(190, 190, 190);        
+
+
+   }
+   .nav > div {
+       min-height: 57vh;
+   }
+   .display {
+       order: 1;
+
+       min-height: 57vh;
+       max-width: 100%;
+       border-bottom: 2px solid rgb(190, 190, 190);        
+
+
+
+   }
+   .bottom {
+       order: 3;
+       min-height: 57vh;
+       min-width: 100%;        
+
+   
+   } 
+
+}
+@media only screen and (min-width: 720px) {
+   .overflow-y-scroll {
+   overflow-y: scroll;
+   overflow-x: hidden;
+   
+
+}
+.overflow-x-hidden {
+   overflow-x: hidden;
+}
+   .app-container {
+       display: grid;
+       padding: 3px;
+       grid-gap: 3px;
+       
+       grid-template: 
+       "nav head" min-content
+       "nav main" 1fr
+           / min-content 1fr;
+       height: 56vh;
+       border-bottom: 2px solid rgb(190, 190, 190);
+   
+   }
+   .nav {
+       grid-area: nav;
+       /* overflow: auto; */
+       resize: horizontal;
+       padding: 0 4px 0 4px;
+       min-height: 55vh;
+       max-height: 55vh;
+       min-width: 25vw;
+       max-width: 80vw;
+       border-right: 2px solid rgb(190, 190, 190);
+   }
+   /* .nav > div {
+       min-height: 57vh;
+   } */
+   .display {
+       grid-area: head;
+       overflow: auto;
+   
+       min-height: 55vh;
+       max-height: 55vh;
+   }
+   .bottom {
+       overflow-y: scroll;
+       min-height: 37vh;
+       max-height: 37vh;
+
+       min-width: 100%;
+   
+   }
+
+}
+
+
